@@ -23,10 +23,10 @@ class Mario {
 
     animateJump = () => {
         if(this.direction > 0){
-            this.nextImage(6, 8)
+            this.nextImage(4, 6)
             this.velocityY += this.accelerationY
         }else{
-            this.nextImage(2, 4)
+            this.nextImage(1, 3)
             this.velocityY += this.accelerationY 
         }
     }
@@ -73,13 +73,13 @@ class Mario {
     runLeft(){
         this.direction = -1
         this.move()
-        this.nextImage(2, 4)
+        this.nextImage(1, 3)
     }
 
     runRight(){
         this.direction = 1
         this.move()
-        this.nextImage(6, 8)
+        this.nextImage(4, 6)
     }
 
     towardsRest(){
@@ -87,9 +87,9 @@ class Mario {
             this.velocityX -= this.drag
         }else{
             if(this.x > 500){
-                this.imageCounter = 5
+                this.imageCounter = 3
             } else {
-                this.imageCounter = 6
+                this.imageCounter = 4
             } 
         }
         if(this.y < this.startY){
