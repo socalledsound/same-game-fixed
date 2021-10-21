@@ -62,6 +62,7 @@ class Game {
                     } else {
                         if(!this.died){
                             this.sounds.themeSong.stop()
+                            console.log(this.sounds)
                             this.sounds.dieSound.play()
                             this.over = true
                             this.started = false

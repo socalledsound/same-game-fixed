@@ -31,6 +31,7 @@ function preload(){
         themeSong, 
         jumpSound, 
         coinSound,
+        dieSound,
     }
 }
 
